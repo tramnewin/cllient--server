@@ -30,7 +30,7 @@ void func(int sockfd)       //function to read in the client's string
         }
     }
 }
-main() {
+int main() {
    // struct sockaddr_in address;
     int my_socket = 0;
     struct sockaddr_in server_address;
@@ -66,5 +66,6 @@ main() {
 
     // close the socket 
     close(my_socket);
+    return 0;
 
 }
